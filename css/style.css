@@ -273,7 +273,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  color: #2b2b2b;
+  color: #474747;
 }
 
 .slider_section .detail-box h1 {
@@ -306,7 +306,7 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: ##575757;
+  background-color: #575757;
   color: #e0e0e0;
   border-radius: 0;
   -webkit-transition: all 0.3s;
