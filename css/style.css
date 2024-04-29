@@ -285,7 +285,7 @@ a:focus {
 }
 
 .slider_section .detail-box p {
-  color: #4d4d4d;
+  color: #bdbbbb;
   font-size: 14px;
 }
 
@@ -315,7 +315,7 @@ a:focus {
 }
 
 .slider_section .detail-box .btn-box .btn1:hover {
-  background-color: #3b3b3b;
+  background-color: #545454;
 }
 
 .slider_section .detail-box .btn-box .btn2 {
@@ -415,7 +415,7 @@ a:focus {
           align-items: center;
   text-align: center;
   margin-top: 45px;
-  background-color: #a1a1a1;
+  background-color: #c4c4c4;
   padding: 20px;
   border-radius: 5px;
 }
@@ -449,7 +449,7 @@ a:focus {
 }
 
 .service_section .box .detail-box a {
-  color: #212121;
+  color: #787878;
   font-weight: 600;
 }
 
@@ -483,7 +483,7 @@ a:focus {
 }
 
 .about_section {
-  background-color: #292929;
+  background-color: #5c5c5c;
   color: #ffffff;
 }
 
@@ -562,7 +562,7 @@ a:focus {
 .why_section .box .img-box img {
   width: 55px;
   height: auto;
-  fill: #262626;
+  fill: #333333;
 }
 
 .why_section .box h5 {
@@ -741,7 +741,7 @@ a:focus {
 }
 
 .client_section .box .detail-box i {
-  color: #00204a;
+  color: #424242;
   margin-bottom: 10px;
 }
 
@@ -775,7 +775,7 @@ a:focus {
 
 /* client section end */
 .info_section {
-  background-color: #212121;
+  background-color: #4d4d4d;
   color: #ffffff;
   padding: 45px 0 15px 0;
 }
