@@ -2,7 +2,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   overflow-x: hidden;
 }
 
@@ -146,7 +146,7 @@ a:focus {
 .navbar-brand span {
   font-weight: bold;
   font-size: 24px;
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .custom_nav-container {
@@ -159,7 +159,7 @@ a:focus {
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
   padding: 5px 20px;
-  color: #e0e0e0;
+  color: #f5f5f5;
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
@@ -180,7 +180,7 @@ a:focus {
   height: 35px;
   padding: 0;
   border: none;
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .custom_nav-container .nav_search-btn:hover {
@@ -203,7 +203,7 @@ a:focus {
   display: block;
   width: 35px;
   height: 4px;
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   margin: 7px 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -218,7 +218,7 @@ a:focus {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   top: -10px;
   border-radius: 5px;
   -webkit-transition: all 0.3s;
@@ -273,7 +273,7 @@ a:focus {
 }
 
 .slider_section .detail-box {
-  color: #474747;
+  color: #333333;
 }
 
 .slider_section .detail-box h1 {
@@ -281,11 +281,11 @@ a:focus {
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 15px;
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .slider_section .detail-box p {
-  color: #bdbbbb;
+  color: #262626;
   font-size: 14px;
 }
 
@@ -306,8 +306,8 @@ a:focus {
 .slider_section .detail-box .btn-box .btn1 {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #4f4f4f;
-  color: #e0e0e0;
+  background-color: #333333;
+  color: #f5f5f5;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -315,14 +315,14 @@ a:focus {
 }
 
 .slider_section .detail-box .btn-box .btn1:hover {
-  background-color: #363636;
+  background-color: #2b2b2b;
 }
 
 .slider_section .detail-box .btn-box .btn2 {
   display: inline-block;
   padding: 10px 15px;
   background-color: #000000;
-  color: #e0e0e0;
+  color: #f5f5f5;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -385,7 +385,7 @@ a:focus {
 }
 
 .slider_section .carousel-indicators li {
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   width: 12px;
   height: 12px;
   border-radius: 100%;
@@ -449,12 +449,12 @@ a:focus {
 }
 
 .service_section .box .detail-box a {
-  color: #787878;
+  color: #333333;
   font-weight: 600;
 }
 
 .service_section .box .detail-box a:hover {
-  color: #575757;
+  color: #262626;
 }
 
 .service_section .btn-box {
@@ -471,7 +471,7 @@ a:focus {
   display: inline-block;
   padding: 10px 45px;
   background-color: #636363;
-  color: #e0e0e0;
+  color: #f5f5f5;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -484,7 +484,7 @@ a:focus {
 
 .about_section {
   background-color: #5c5c5c;
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .about_section .heading_container {
@@ -512,8 +512,8 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #575757;
-  color: #e0e0e0;
+  background-color: #333333;
+  color: #f5f5f5;
   border-radius: 0px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -522,7 +522,7 @@ a:focus {
 }
 
 .about_section .detail-box a:hover {
-  background-color: #616161;
+  background-color: #262626;
 }
 
 .why_section .box {
@@ -588,7 +588,7 @@ a:focus {
   display: inline-block;
   padding: 10px 45px;
   background-color: #575757;
-  color: #e0e0e0;
+  color: #f5f5f5;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -603,7 +603,7 @@ a:focus {
 .team_section {
   text-align: center;
   background-color: #303030;
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .team_section .heading_container {
@@ -642,7 +642,7 @@ a:focus {
 .team_section .team_container .box .img-box img {
   width: 120px;
   border-radius: 100%;
-  border: 5px solid #e0e0e0;
+  border: 5px solid #f5f5f5;
 }
 
 .team_section .team_container .box .detail-box {
@@ -666,7 +666,7 @@ a:focus {
 }
 
 .team_section .team_container .box .social_box a {
-  color: #e0e0e0;
+  color: #f5f5f5;
   font-size: 22px;
 }
 
@@ -734,7 +734,7 @@ a:focus {
 }
 
 .client_section .box .detail-box {
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
   padding: 75px 25px 25px 25px;
@@ -759,7 +759,7 @@ a:focus {
 .client_section .owl-carousel .owl-nav .owl-next {
   width: 55px;
   height: 55px;
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   color: #000000;
   outline: none;
   bottom: 0px;
@@ -776,7 +776,7 @@ a:focus {
 /* client section end */
 .info_section {
   background-color: #4d4d4d;
-  color: #e0e0e0;
+  color: #f5f5f5;
   padding: 45px 0 15px 0;
 }
 
@@ -801,7 +801,7 @@ a:focus {
 
 .info_section .info_contact .contact_link_box a {
   margin: 5px 0;
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .info_section .info_contact .contact_link_box a i {
@@ -830,7 +830,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #e0e0e0;
+  color: #f5f5f5;
   border-radius: 100%;
   margin-right: 10px;
   font-size: 24px;
@@ -860,7 +860,7 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 15px;
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .info_section .info_links a:hover {
@@ -869,28 +869,28 @@ a:focus {
 
 .info_section form input {
   border: none;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #f5f5f5;
   background-color: transparent;
   width: 100%;
   height: 45px;
-  color: #e0e0e0;
+  color: #f5f5f5;
   outline: none;
 }
 
 .info_section form input::-webkit-input-placeholder {
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .info_section form input:-ms-input-placeholder {
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .info_section form input::-ms-input-placeholder {
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .info_section form input::placeholder {
-  color: #e0e0e0;
+  color: #f5f5f5;
 }
 
 .info_section form button {
@@ -899,7 +899,7 @@ a:focus {
   display: inline-block;
   padding: 10px 55px;
   background-color: #575757;
-  color: #e0e0e0;
+  color: #f5f5f5;
   border-radius: 0;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -914,7 +914,7 @@ a:focus {
 /* footer section*/
 .footer_section {
   position: relative;
-  background-color: #e0e0e0;
+  background-color: #f5f5f5;
   text-align: center;
 }
 
