@@ -20,19 +20,37 @@
     <h1>Project Gallery</h1>
     <div class="grid">
       <div class="card">
-        <a href="image_work_1.html"><img src="images/work_1_small.jpg" alt="Work 1"><span>Work 1</span></a>
+        <a href="image_work_1.html"><img data-base="images/work_1_large" alt="Work 1"><span>Work 1</span></a>
       </div>
       <div class="card">
-        <a href="image_work_2.html"><img src="images/work_2_small.jpg" alt="Work 2"><span>Work 2</span></a>
+        <a href="image_work_2.html"><img data-base="images/work_2_large" alt="Work 2"><span>Work 2</span></a>
       </div>
       <div class="card">
-        <a href="image_work_3.html"><img src="images/work_3_small.jpg" alt="Work 3"><span>Work 3</span></a>
+        <a href="image_work_3.html"><img data-base="images/work_3_large" alt="Work 3"><span>Work 3</span></a>
       </div>
       <div class="card">
-        <a href="image_work_4.html"><img src="images/work_4_small.jpg" alt="Work 4"><span>Work 4</span></a>
+        <a href="image_work_4.html"><img data-base="images/work_4_large" alt="Work 4"><span>Work 4</span></a>
       </div>
     </div>
     <p class="note">Each link opens a clean, image-only page suitable for sharing or embedding.</p>
   </div>
+    <script>
+    (function(){
+      var exts=['.jpg','.jpeg','.png','.webp','.gif','.svg'];
+      function probe(base,img){
+        var i=0;
+        function next(){
+          if(i>=exts.length){ return; }
+          var url=base+exts[i++];
+          var t=new Image();
+          t.onload=function(){ img.src=url; };
+          t.onerror=next;
+          t.src=url;
+        }
+        next();
+      }
+      document.querySelectorAll('img[data-base]').forEach(function(img){ probe(img.getAttribute('data-base'), img); });
+    })();
+    </script>
 </body>
 </html>
