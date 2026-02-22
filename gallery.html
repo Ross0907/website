@@ -20,16 +20,28 @@
     <h1>Project Gallery</h1>
     <div class="grid">
       <div class="card">
-        <a href="image_work_1.html"><img data-base="images/work_1_large" alt="Work 1"><span>Work 1</span></a>
+        <a href="image_work_1.html"><img data-base="images/work_1_large" alt="HE tablet PCB Veiw"><span>Work 1</span></a>
+        <a class="open-raw" data-base="images/work_1_large" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#ddd;font-size:13px;text-decoration:none">Open Raw</a>
       </div>
       <div class="card">
-        <a href="image_work_2.html"><img data-base="images/work_2_large" alt="Work 2"><span>Work 2</span></a>
+        <a href="image_work_2.html"><img data-base="images/work_2_large" alt="HE tablet PCB 3D"><span>Work 2</span></a>
+        <a class="open-raw" data-base="images/work_2_large" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#ddd;font-size:13px;text-decoration:none">Open Raw</a>
       </div>
       <div class="card">
-        <a href="image_work_3.html"><img data-base="images/work_3_large" alt="Work 3"><span>Work 3</span></a>
+        <a href="image_work_3.html"><img data-base="images/work_3_large" alt="HE tablet PCB 3D"><span>Work 3</span></a>
+        <a class="open-raw" data-base="images/work_3_large" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#ddd;font-size:13px;text-decoration:none">Open Raw</a>
       </div>
       <div class="card">
-        <a href="image_work_4.html"><img data-base="images/work_4_large" alt="Work 4"><span>Work 4</span></a>
+        <a href="image_work_4.html"><img data-base="images/work_4_large" alt="PID controller schematic"><span>Work 4</span></a>
+        <a class="open-raw" data-base="images/work_4_large" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#ddd;font-size:13px;text-decoration:none">Open Raw</a>
+      </div>
+      <div class="card">
+        <a href="image_work_5.html"><img data-base="images/work_5_large" alt="PID controller PCB"><span>Work 5</span></a>
+        <a class="open-raw" data-base="images/work_5_large" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#ddd;font-size:13px;text-decoration:none">Open Raw</a>
+      </div>
+      <div class="card">
+        <a href="image_work_6.html"><img data-base="images/work_6_large" alt="Work 6"><span>Work 6</span></a>
+        <a class="open-raw" data-base="images/work_6_large" href="#" target="_blank" rel="noopener" style="display:inline-block;margin-top:6px;color:#ddd;font-size:13px;text-decoration:none">Open Raw</a>
       </div>
     </div>
     <p class="note">Each link opens a clean, image-only page suitable for sharing or embedding.</p>
@@ -43,7 +55,7 @@
           if(i>=exts.length){ return; }
           var url=base+exts[i++];
           var t=new Image();
-          t.onload=function(){ img.src=url; };
+          t.onload=function(){ img.src=url; var raw = document.querySelector('a.open-raw[data-base="'+base+'"]'); if(raw) raw.href = url; };
           t.onerror=next;
           t.src=url;
         }

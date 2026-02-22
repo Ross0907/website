@@ -6,14 +6,50 @@
   <title>Work 1</title>
   <style>html,body{height:100%;margin:0;background:#000}img{width:100%;height:100%;object-fit:contain;display:block}</style>
 </head>
+</body>
 <body>
-  <img data-base="images/work_1_large" alt="Work 1">
-  <script>
+  <a id="close-btn" href="gallery.html" style="position:fixed;top:16px;left:16px;z-index:1001;font-size:2.5em;color:#fff;text-decoration:none;background:rgba(0,0,0,0.5);padding:0 12px;border-radius:6px;line-height:1;">&times;</a>
+  <a id="open-raw" href="#" target="_blank" rel="noopener" style="position:fixed;top:16px;right:16px;z-index:1001;color:#fff;background:rgba(0,0,0,0.5);padding:8px 14px;border-radius:6px;text-decoration:none;font-size:1em;">Open image</a>
+  <img data-base="images/work_1_large" alt="Work 1" style="z-index:1;position:relative;">
+    <div id="overlay" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:100;background:transparent;"></div>
+    <script>
   (function(){
     var exts=['.jpg','.jpeg','.png','.webp','.gif','.svg'];
     var base='images/work_1_large';
     var img=document.querySelector('img[data-base]');
-    var i=0; function next(){ if(i>=exts.length) return; var url=base+exts[i++]; var t=new Image(); t.onload=function(){ img.src=url }; t.onerror=next; t.src=url; } next();
+    var rawLink=document.getElementById('open-raw');
+    var i=0;
+    function next(){
+      if(i>=exts.length) return;
+      var url=base+exts[i++];
+      var t=new Image();
+      t.onload=function(){ img.src=url; if(rawLink) rawLink.href = url; };
+      t.onerror=next;
+      t.src=url;
+    }
+    next();
+
+    // Click blank space to go back
+    // Click on black background to go back
+      // Overlay click to go back
+      document.getElementById('overlay').addEventListener('click', function(e){
+        window.location.href = 'gallery.html';
+      });
+      // ESC to go back (use both window and document for reliability)
+      window.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') window.location.href = 'gallery.html';
+      });
+      document.addEventListener('keydown', function(e){
+        if(e.key === 'Escape') window.location.href = 'gallery.html';
+      });
+    // ESC to go back (use keydown on window for reliability)
+    window.addEventListener('keydown', function(e){
+      if(e.key === 'Escape') window.location.href = 'gallery.html';
+    });
+    // Prevent image click from bubbling
+    img.addEventListener('click', function(e){ e.stopPropagation(); });
+    document.getElementById('close-btn').addEventListener('click', function(e){ e.stopPropagation(); });
+    rawLink.addEventListener('click', function(e){ e.stopPropagation(); });
   })();
   </script>
 </body>
